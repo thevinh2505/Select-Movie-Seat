@@ -1,0 +1,124 @@
+td{
+    width: 40px;
+    font-weight: 600;
+    font-size: 1em;
+    padding-top: 7px;
+    height: 24px;
+    color: #fff;
+}
+input{
+    margin: 0;
+    font-family: unset;
+    font-size: 0;
+}
+.td-heading{
+    /* padding-left:7px; */
+    text-align:center
+}
+.main{
+    background-image: url(./src/img/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.col-left{
+    padding-left: 55px;
+}
+.heading-screen{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.heading-screen h1{
+    margin-top: 10px;
+}
+.col-right{
+    align-self:flex-start;
+    padding:55px 55px 0 55px;
+}
+h1{
+    margin: 0;
+    color:white
+}
+.seat-type{
+    margin-top: 20px;
+}
+.booked-seat,.selected-seat,.free-seat{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(250, 171, 13);
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align:bottom;
+    margin-right: 10px;
+}
+.selected-seat{
+    background-color: yellowgreen;
+}
+.free-seat{
+    background-color: #ffffff;
+}
+span{
+    color: white;
+}
+.seats{
+    width: 13px;
+    margin-right: 14px;
+    cursor: pointer;
+    border: 1px solid red;
+    background: yellow;
+    margin: 10px;
+}
+.booked-seats{
+    width: 13px;
+    margin-right: 14px;
+    cursor: pointer;
+    border: 1px solid red;
+    background: yellow;
+    margin: 10px;
+}
+
+input[type=checkbox]::before{
+    content: "";
+    width: 25px;
+    height: 18px;
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    border: 3px solid #ff9800;
+    box-shadow: inset 0px 2px 3px 0px rgb(0 0 0 / 30%), 0px 1px 0px 0px rgb(255 255 255 / 80%);
+    background-color: #ffffff;
+    transition: 0.3s;
+    box-sizing: content-box;
+}
+input[type=checkbox]:checked::before{
+    background-color: Green;
+    font-size: 15px;
+    cursor: no-drop;
+}
+.booked-seats::before{
+    content: "";
+    width: 25px;
+    height: 18px;
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    border: 3px solid red;
+    box-shadow: inset 0px 2px 3px 0px rgb(0 0 0 / 30%), 0px 1px 0px 0px rgb(255 255 255 / 80%);
+    background-color: #ff9800!important;
+    transition: 0.3s;
+    box-sizing: content-box;
+}
+.table-info td{
+    width: 100px;
+    font-weight: 600;
+    font-size: 1em;
+    padding-top: 7px;
+    height: 24px;
+    color: #fff;
+}
